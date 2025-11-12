@@ -1,0 +1,1 @@
+alert("cadastrado com sucesso!");
