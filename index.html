@@ -17,33 +17,35 @@
     <div id="container">
         <main>
             <div class="image"></div>
-            <h1>Login</h1>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, deserunt numquam impedit qui quasi
-                exercitationem rem aliquid officia accusamus, ad magnam quaerat alias tempore obcaecati, debitis quia
-                delectus reiciendis accusantium?
-            </p>
+            <header>
+                <h1>Login</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, deserunt numquam impedit qui quasi
+                    exercitationem rem aliquid officia accusamus, ad magnam quaerat alias tempore obcaecati, debitis quia
+                    delectus reiciendis accusantium?
+                    quia
+                    
+                </p>
+            </header>
             <form action="cadastro.js" method="post">
                 <label for="i-mail">
                     <i class="material-symbols-outlined">
                         person
                     </i>
-                    <input type="email" name="email" id="i-mail">
+                    <input type="email" name="email" id="i-mail" required placeholder="Digite seu e-mail">  
                 </label>                                            <br>
                 <label for="i-senha">
                     <i class="material-symbols-rounded">
                        Key
                     </i>
-                    <input type="password" name="senha" id="i-senha"> <br>
+                    <input type="password" name="senha" id="i-senha" required placeholder="Digite sua senha"> <br>
                 </label>
-                <input type="submit" value="Entrar">
                 <label for="">
-                    <button>Escqueci a senha <i class="material-symbols-rounded">mail_lock</i></button>
-                    
+                    <button class="buttons">Escqueci a senha <i class="material-symbols-rounded">mail_lock</i></button> <br>
+                    <button class="last-button">Entrar</button>
                 </label>
-
-
-
+                
+                
             </form>
         </main>
     </div>

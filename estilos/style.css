@@ -1,43 +1,123 @@
 @import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
-*{
+
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: "Zalando Sans Expanded", sans-serif;   
+    font-family: "Zalando Sans Expanded", sans-serif;
 }
-body,html{
+
+body,
+html {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(165, 163, 163, 0.49));
+    background-image: url(../imagens/pexels-cristianossilva-12831907.jpg);
+    background-size: cover;
 }
-#container{
-    width: 600px;
-    border-radius: 10px;
+
+#container {
+    width: 60%;
+    border-radius: 30px;
     border: 1px solid black;
+    box-shadow: 1px 1px 20px white;
     position: absolute;
     margin: 0 auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.image{
+
+.image {
     background-image: url(../imagens/background.jpg);
     width: 100%;
+    border-radius: 30px 30px 0px 0px;
     height: 400px;
     background-size: cover;
     background-position: center bottom;
+    background-position: center center;
+    box-shadow: 1px 1px 20px white;
 }
 
-h1{
-    padding: 20px;
-    text-align: center;
-    color: rgba(16, 14, 14, 0.696);
-    font-size: 2.6em;
+header {
+    width: 80%;
+    margin: auto;
 }
-p{
-    text-align: justify;
-    width: 600px;
+
+header>h1 {
+    color: white;
     text-align: center;
-    color: aliceblue;
-    margin-bottom: 30px;
+    text-decoration: underline;
+
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 3.5em;
+    font-family: unset;
+}
+
+p {
+    text-align: justify;
+    color: white;
+    margin-bottom: 10px;
+    width: 100%;
+    
+}
+
+form {
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+}
+
+form>label {
+    padding: 10px;
+}
+
+form>label>i {
+    position: absolute;
+    left: 40px;
+    color: rgb(255, 255, 255);
+}
+
+form>label>input {
+    padding: 15px;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.672);
+}
+
+.buttons {
+    width: 80%;
+    margin-top: 10px;
+    display: block;
+    margin: auto;
+    margin-bottom: -15px;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: rgba(112, 109, 109, 0.418);
+    box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.672);
+    color: white;
+
+    transition: 1s all ease;
+}
+
+.buttons>i {
+    text-align: center;
+}
+.buttons:hover{
+    background-color: rgba(240, 255, 255, 0.303);
+    width: 250px; 
+}
+
+.last-button {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding:5px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
 }
